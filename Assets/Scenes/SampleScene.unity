@@ -468,8 +468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   x: 10
-  y: 5.4
-  result: 0
+  y: 2
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
