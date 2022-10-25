@@ -428,7 +428,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681696776}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f313b572c9db09b44bcf5a4170f27b69, type: 3}
   m_Name: 
@@ -436,6 +436,7 @@ MonoBehaviour:
   wheels: 4
   name: coche
   isOn: 1
+  gasoline: 10
   sound: brum brum brum
 --- !u!114 &681696784
 MonoBehaviour:
@@ -444,19 +445,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681696776}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00fc726f98821954e8de4ed156b93597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAge: 22
-  playerSpeed: 3.45
-  playerName: harck
-  gameOver: 0
-  message: Hola mundo
-  points: 256
-  x: 3
-  y: 2
+  initialPos: {x: 4, y: 1, z: 1}
 --- !u!114 &681696785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,6 +675,7 @@ MonoBehaviour:
   wheels: 6
   name: bus
   isOn: 1
+  gasoline: 8
   sound: abraza farolas
 --- !u!1 &853748388
 GameObject:
@@ -797,6 +792,7 @@ MonoBehaviour:
   wheels: 2
   name: moto
   isOn: 0
+  gasoline: 5
   sound: brum brum brum
 --- !u!1 &963194225
 GameObject:
