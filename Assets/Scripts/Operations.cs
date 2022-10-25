@@ -27,7 +27,7 @@ public class Operations : MonoBehaviour
      areDiffernt = name1 != name2;
          Debug.Log(areDiffernt);
      }   */
-
+    /*
     public float x = 2.0f;
     public float y = 0.5f;
     private bool isGreater;
@@ -36,8 +36,9 @@ public class Operations : MonoBehaviour
         isGreater = x > y;
         Debug.Log(isGreater);
 
-    }
-}
+    }*/
+
+
 
     //Operaciones normales
     /*    public float x = 10;
@@ -51,4 +52,20 @@ public class Operations : MonoBehaviour
             Debug.Log(result = x / y);
             Debug.Log(result = x % y);
         }*/
+    public bool isRaining = true;
+    public float number;
+    private bool isOn;
+    private void Start()
+    {
+        if (number > 0)
+        {
+            Debug.Log($"El numero {number} es positivo");
 
+        }
+        if (isRaining == true)
+        {
+            Debug.Log(message: "true");
+        }
+    }
+
+}

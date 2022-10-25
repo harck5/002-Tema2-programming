@@ -7,8 +7,32 @@ public class Vehicle : MonoBehaviour
 //Variable wheels num de ruedas
 [SerializeField] private int wheels = 4 ;
 [SerializeField] private string name = "car";
+[SerializeField] private bool isOn;
+    public string sound = "brum brum brum";
     private void Start()
     {
-        Debug.Log(message: string.Format("Tu vehiculo es {0} y tiene {1} ruedas" , name , wheels)) ;
+        //Debug.Log(message: string.Format("Tu vehiculo es {0} y tiene {1} ruedas" , name , wheels)) ;
+        /*if (isOn == true)
+        {
+            Debug.Log($"El {name} esta encendido");
+        }
+        else
+        {
+            Debug.Log($"La {name} esta apagado");
+        }*/
+        if (isOn == false)
+        {
+            Debug.Log($"{name} esta apagado");
+
+        }
+        else if (sound != "")
+        {
+            Debug.Log($"{sound}");
+        }
+        else
+        {
+            Debug.Log($"{name} en marcha");
+        }
     }
+    
 }
