@@ -12,7 +12,7 @@ public class MyFirstScript : MonoBehaviour
     public string message = "Hola mundo";
     public int points = 256;*/
 
-    public Vector3 initialPos = new Vector3(1, 1, 1);
+    //public Vector3 initialPos = new Vector3(1, 1, 1);
 
     private void Start()
        {
@@ -33,6 +33,37 @@ public class MyFirstScript : MonoBehaviour
         Debug.Log(x);
 
     }*/
-    transform.position = initialPos;
+    }
+    public bool canGetBigger;
+    private void Update()
+    {
+        if (canGetBigger == true)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                transform.localScale += Vector3.one;
+            }
+        }
+        if (canGetBigger == true)
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                transform.localScale -= Vector3.one;
+            }
+        }
+        /*if (canGetBigger == false)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                transform.localPosition += Vector3.left;
+            }
+        }
+        if (canGetBigger == false)
+        {
+            if (Input.GetMouseButtonDown(3))
+            {
+                transform.localPosition += Vector3.right;
+            }
+        }*/
     }
 }

@@ -52,20 +52,28 @@ public class Operations : MonoBehaviour
             Debug.Log(result = x / y);
             Debug.Log(result = x % y);
         }*/
-    public bool isRaining = true;
+    /*public bool isRaining = true;
     public float number;
-    private bool isOn;
+    private bool isOn;*/
     private void Start()
     {
-        if (number > 0)
-        {
-            Debug.Log($"El numero {number} es positivo");
 
-        }
-        if (isRaining == true)
-        {
-            Debug.Log(message: "true");
-        }
+        /* if (number > 0)
+         {
+             Debug.Log($"El numero {number} es positivo");
+
+         }
+         if (isRaining == true)
+         {
+             Debug.Log(message: "true");
+         }*/
+            Debug.Log(Calculator(x, y));
     }
-
+    private float Calculator(float x, float y)
+    {
+        Debug.Log( message:$"{x} + {y} = {x + y}");
+        Debug.Log( message:$"{x} - {y} = {x - y}");
+        Debug.Log( message:$"{x} * {y} = {x * y}");
+        Debug.Log( message:$"{x} / {y} = {x / y}");
+    }
 }
