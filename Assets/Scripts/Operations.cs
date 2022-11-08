@@ -67,13 +67,22 @@ public class Operations : MonoBehaviour
          {
              Debug.Log(message: "true");
          }*/
-            Debug.Log(Calculator(x, y));
     }
-    private float Calculator(float x, float y)
+        private void Update ()
+        {
+        if (imput.getmousebutondown(0))
+        {
+            (Calculator(2, 3));
+        }
+        }   
+     
+    private void Calculator (float num1, float num2)
     {
-        Debug.Log( message:$"{x} + {y} = {x + y}");
-        Debug.Log( message:$"{x} - {y} = {x - y}");
-        Debug.Log( message:$"{x} * {y} = {x * y}");
-        Debug.Log( message:$"{x} / {y} = {x / y}");
+        float result1 = num1 + num2;
+        Debug.Log( message: $"{result1}");
+        //Debug.Log( message:$"{x} + {y} = {x + y}");
+        //Debug.Log( message:$"{x} - {y} = {x - y}");
+        //Debug.Log( message:$"{x} * {y} = {x * y}");
+        //Debug.Log( message:$"{x} / {y} = {x / y}");
     }
 }
